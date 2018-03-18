@@ -12,6 +12,10 @@ defmodule Geom do
     :math.pi * a * b
   end
 
+  def area(_, _, _) do
+    0
+  end
+
 end
 
 #iex(3)> Geom.area(:rectangle, 2, 4)
