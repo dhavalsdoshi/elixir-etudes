@@ -1,14 +1,14 @@
 defmodule Geom do
 
-  def area(:rectangle, length, width) do
+  def area(:rectangle, length, width) when length >= 0 and width >= 0 do
     length * width
   end
 
-  def area(:triangle, base, height) do
+  def area(:triangle, base, height) when base >= 0 and height >= 0 do
     0.5 * base * height
   end
 
-  def area(:ellipse, a, b) do
+  def area(:ellipse, a, b) when a >= 0 and b >= 0 do
     :math.pi * a * b
   end
 
